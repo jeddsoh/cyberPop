@@ -1,0 +1,188 @@
+/* FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap");
+
+/* COLOR THEMES */
+:root {
+  --fuchsia050: #fdf4ff;
+  --fuchsia100: #fae8ff;
+  --fuchsia200: #f5d0fe;
+  --fuchsia300: #f0abfc;
+  --fuchsia400: #e879f9;
+  --fuchsia500: #d946ef;
+  --fuchsia600: #c026d3;
+  --fuchsia700: #a21caf;
+  --fuchsia800: #86198f;
+  --fuchsia900: #701a75;
+  --fuchsia950: #4a044e;
+  --fuchsia1050: #170118;
+}
+
+:root,
+:root.dark {
+  --bg-color: var(--fuchsia1050);
+  --color: var(--fuchsia050);
+  --button-bg: var(--fuchsia600);
+}
+
+:root.light {
+  --bg-color: var(var(--fuchsia050));
+  --color: var(var(--fuchsia1050));
+}
+
+.text-fuchsia500 {
+  color: var(--fuchsia500);
+}
+
+/* MAIN CSS */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-color);
+  color: var(--color);
+  font-family: "Sora", sans-serif;
+  font-size: 1rem;
+  position: relative;
+}
+
+.test {
+  height: 100vh;
+  background-color: var(--fuchsia300);
+}
+
+header {
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  background-color: var(--fuchsia1050);
+}
+
+.headerNav {
+  display: flex;
+  padding: 1rem 2rem;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+nav .navLinks {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.navLinks a {
+  text-decoration: none;
+}
+
+.button {
+  text-decoration: none;
+  background-color: var(--fuchsia600);
+  padding: 0.75rem 1.25rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  font-weight: 600;
+  font-size: 0.85rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 0 var(--fuchsia900);
+  transition: 100ms;
+}
+
+.button:hover {
+  background-color: var(--fuchsia500);
+  box-shadow: 0 6px 0 var(--fuchsia900);
+  transform: translateY(-2px);
+}
+
+.button:active {
+  background-color: var(--fuchsia600);
+  box-shadow: 0 0px 0 var(--fuchsia900);
+  transform: translateY(4px);
+}
+
+a {
+  color: var(--fuchsia050);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+}
+
+.brand img {
+  width: 3rem;
+  height: 3rem;
+}
+
+.brand p {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+/* PREFLIGHT */
+blockquote,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+figure,
+p,
+pre {
+  margin: 0;
+}
+
+ol,
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display: block;
+  vertical-align: middle;
+}
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+*,
+::before,
+::after {
+  border-width: 0;
+  border-style: solid;
+  border-color: theme("borderColor.DEFAULT", currentColor);
+}
