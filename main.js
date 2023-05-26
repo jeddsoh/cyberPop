@@ -1,7 +1,7 @@
-window.onscroll = function () {
-  scrollFunction();
-};
+const menuBtn = document.querySelector(".menu-btn");
+const mobileMenu = document.querySelector(".mobile-nav");
 
-function scrollFunction() {
-  document.getElementById("navbar").style.backgroundColor = "#170118";
-}
+menuBtn.addEventListener("click", function () {
+  menuBtn.classList.toggle("is-active");
+  mobileMenu.classList.toggle("is-active");
+})
