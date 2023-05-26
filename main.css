@@ -49,11 +49,6 @@ body {
   margin: 0 auto;
 }
 
-.test {
-  height: 100vh;
-  background-color: var(--fuchsia300);
-}
-
 header {
   top: 0;
   left: 50%;
@@ -231,6 +226,38 @@ header {
   transform: translateY(4px);
 }
 
+.button-secondary {
+  text-decoration: none;
+  background-color: var(--fuchsia200);
+  color: var(--fuchsia950);
+  padding: 0.75rem 1.25rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  font-weight: 600;
+  font-size: 0.85rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 0 var(--fuchsia900);
+  transition: 100ms;
+}
+
+.button-secondary:hover {
+  background-color: var(--fuchsia600);
+  color: var(--fuchsia050);
+  box-shadow: 0 6px 0 var(--fuchsia900);
+  transform: translateY(-2px);
+}
+
+.button-secondary:active {
+  background-color: var(--fuchsia600);
+  color: var(--fuchsia050);
+  box-shadow: 0 0px 0 var(--fuchsia900);
+  transform: translateY(4px);
+}
+
 a {
   color: var(--fuchsia050);
 }
@@ -252,6 +279,95 @@ a {
   font-size: 1.5rem;
   font-weight: 600;
 }
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  box-sizing: border-box;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+@media (max-width: 640px) {
+  .hero {
+    text-align: left;
+    justify-content: start;
+  }
+}
+
+h1 {
+  font-size: 5rem;
+  line-height: 5rem;
+}
+
+p {
+  line-height: 1.75rem;
+}
+
+.text-underline {
+  text-decoration: underline;
+}
+
+.text-overline {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.825rem;
+  letter-spacing: 0.1rem;
+}
+
+.max-width-768 {
+  max-width: 768px;
+}
+
+.col-gap-0-5 {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.col-gap-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+}
+
+.col-gap-1-5 {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.content-button-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-group {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+@media (max-width: 640px) {
+  .button-group {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+
 
 /* PREFLIGHT */
 blockquote,
