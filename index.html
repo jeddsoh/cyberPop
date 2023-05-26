@@ -11,7 +11,7 @@
   </head>
   <body>
     <header>
-      <nav class="navbar container">
+      <nav class="navbar">
         <a href="" class="brand">
           <img src="./assets/brand/favicon.svg" alt="cyberPop logo" />
           <p>cyber<span class="text-fuchsia500">Pop</span></p>
@@ -35,7 +35,7 @@
             </svg>
             Home</a
           >
-          <a href="" class="nav-link"
+          <a href="#home-projects" class="nav-link"
             ><svg
               class="icon-sm"
               xmlns="http://www.w3.org/2000/svg"
@@ -214,12 +214,19 @@
         <div class="content-button-wrapper max-width-768">
           <div class="col-gap-1">
             <div class="col-gap-0-5">
-              <p class="text-overline text-fuchsia500">Design / Development</p>
-              <h1>Your <span class="text-fuchsia500">new website</span> starts here.</h1>
+              <svg class="icon-overline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                <path fill-rule="evenodd" d="M2.25 5.25a3 3 0 013-3h13.5a3 3 0 013 3V15a3 3 0 01-3 3h-3v.257c0 .597.237 1.17.659 1.591l.621.622a.75.75 0 01-.53 1.28h-9a.75.75 0 01-.53-1.28l.621-.622a2.25 2.25 0 00.659-1.59V18h-3a3 3 0 01-3-3V5.25zm1.5 0v7.5a1.5 1.5 0 001.5 1.5h13.5a1.5 1.5 0 001.5-1.5v-7.5a1.5 1.5 0 00-1.5-1.5H5.25a1.5 1.5 0 00-1.5 1.5z" clip-rule="evenodd" />
+              </svg>
+              
+              <h1>
+                You've found the
+                <span class="text-fuchsia500">wicked wizard</span> of the web!
+              </h1>
             </div>
             <p>
-              I’m Jedd, also known as cyberPop. I'm a <span class="text-underline">UI Engineer</span>, which means I design and build websites and interfaces that are useful, usable, and
-              beautiful – in that order.
+              Welcome to my virtual lair, where code meets creativity. I'm Jedd,
+              the <span class="">digital alchemist</span> known as
+              cyberPop, here to conjure pixel-perfect spells that will leave you enchanted.
             </p>
           </div>
           <div class="button-group">
@@ -228,7 +235,65 @@
           </div>
         </div>
       </section>
-      <section class="test"></section>
+      <section class="projects" id="home-projects">
+        <div class="container">
+          <div class="text-wrapper">
+            <div class="heading-wrapper">
+              <svg
+                class="icon-overline green"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10.5 3.798v5.02a3 3 0 01-.879 2.121l-2.377 2.377a9.845 9.845 0 015.091 1.013 8.315 8.315 0 005.713.636l.285-.071-3.954-3.955a3 3 0 01-.879-2.121v-5.02a23.614 23.614 0 00-3 0zm4.5.138a.75.75 0 00.093-1.495A24.837 24.837 0 0012 2.25a25.048 25.048 0 00-3.093.191A.75.75 0 009 3.936v4.882a1.5 1.5 0 01-.44 1.06l-6.293 6.294c-1.62 1.621-.903 4.475 1.471 4.88 2.686.46 5.447.698 8.262.698 2.816 0 5.576-.239 8.262-.697 2.373-.406 3.092-3.26 1.47-4.881L15.44 9.879A1.5 1.5 0 0115 8.818V3.936z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <h2>Recent Projects</h2>
+            </div>
+            <p>
+              I turn caffeine into code and pixels into potions, creating web
+              experiences that are so addictive, your users might need a support
+              group.
+            </p>
+          </div>
+          <div class="projects-wrapper">
+            <div class="project-card">
+              <div class="project-left">
+                <img class="project-logo affirm" src="./assets/projects/affirm/logo.png" alt="">
+                <h3 class="project-title">
+                  Designing internal software for financial technology
+                </h3>
+                <p class="project-description">
+                  I designed internal software for <a class="project-company affirm" href="https://www.affirm.com/" target="_blank">Affirm</a> to overhaul account management for support agents, resulting in increased efficiency, fewer data discrepancies, and decreased customer frustration.
+                </p>
+                <a href="" class="project-button">View Project</a>
+              </div>
+              <div class="project-right">
+                <img class="project-img" src="./assets/projects/affirm/thumbnail.png" alt="A screen from a project with Affirm">
+              </div>
+            </div>
+            <div class="project-card">
+              <div class="project-left">
+                <img class="project-logo youversion" src="./assets/projects/youversion/logo.png" alt="">
+                <h3 class="project-title">
+                  Designing mobile features for the Bible App
+                </h3>
+                <p class="project-description">
+                  I designed updated prayer features for <a class="project-company youversion" href="https://www.youversion.church/" target="_blank">YouVersion</a>, AKA The Bible App, to help users access their prayers faster and better manage them.
+                </p>
+                <a href="" class="project-button">View Project</a>
+              </div>
+              <div class="project-right">
+                <img class="project-img youversion" src="./assets/projects/youversion/thumbnail.png" alt="A screen from a project with Affirm">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <section class="test"></section>
     </main>
     <footer class="container"></footer>
