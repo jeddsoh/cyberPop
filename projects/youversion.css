@@ -36,22 +36,35 @@
   --indigo900: #312e81;
   --indigo950: #1e1b4b;
   --indigo1050: #0f0e26;
+  --red050: #fef2f2;
+  --red100: #fee2e2;
+  --red200: #fecaca;
+  --red300: #fca5a5;
+  --red400: #f87171;
+  --red500: #ef4444;
+  --red600: #dc2626;
+  --red700: #b91c1c;
+  --red800: #991b1b;
+  --red900: #7f1d1d;
+  --red950: #450a0a;
+  --red1050: 240505;
+
 }
 
 :root,
 :root.indigo {
-  --color050: var(--indigo050);
-  --color100: var(--indigo100);
-  --color200: var(--indigo200);
-  --color300: var(--indigo300);
-  --color400: var(--indigo400);
-  --color500: var(--indigo500);
-  --color600: var(--indigo600);
-  --color700: var(--indigo700);
-  --color800: var(--indigo800);
-  --color900: var(--indigo900);
-  --color950: var(--indigo950);
-  --color1050: var(--indigo1050);
+  --color050: var(--red050);
+  --color100: var(--red100);
+  --color200: var(--red200);
+  --color300: var(--red300);
+  --color400: var(--red400);
+  --color500: var(--red500);
+  --color600: var(--red600);
+  --color700: var(--red700);
+  --color800: var(--red800);
+  --color900: var(--red900);
+  --color950: var(--red950);
+  --color1050: var(--red1050);
 }
 
 .text-fuchsia500 {
@@ -324,23 +337,11 @@ a {
   align-items: center;
   justify-content: center;
   text-align: left;
-  background: rgb(238, 242, 255);
-  background: -moz-linear-gradient(
-    180deg,
-    rgba(238, 242, 255, 1) 0%,
-    rgba(224, 231, 255, 1) 100%
-  );
-  background: -webkit-linear-gradient(
-    180deg,
-    rgba(238, 242, 255, 1) 0%,
-    rgba(224, 231, 255, 1) 100%
-  );
-  background: linear-gradient(
-    180deg,
-    rgba(238, 242, 255, 1) 0%,
-    rgba(224, 231, 255, 1) 100%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#eef2ff",endColorstr="#e0e7ff",GradientType=1);
+  background: rgb(254,242,242);
+  background: -moz-linear-gradient(180deg, rgba(254,242,242,1) 0%, rgba(254,226,226,1) 100%);
+  background: -webkit-linear-gradient(180deg, rgba(254,242,242,1) 0%, rgba(254,226,226,1) 100%);
+  background: linear-gradient(180deg, rgba(254,242,242,1) 0%, rgba(254,226,226,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fef2f2",endColorstr="#fee2e2",GradientType=1);
 }
 
 @media (max-width: 640px) {
@@ -362,7 +363,7 @@ a {
 
 .project-logo {
   margin: 0 auto 2rem 0;
-  width: 8rem;
+  width: 4rem;
   box-shadow: none;
 }
 
