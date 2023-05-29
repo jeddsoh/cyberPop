@@ -620,7 +620,7 @@ p {
 }
 
 .icon-overline.green {
-  color: #84cc16;
+  color: var(--fuchsia500);
   height: 2rem;
   width: 2rem;
   margin: 0 auto 1rem;
