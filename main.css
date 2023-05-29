@@ -67,6 +67,12 @@ body {
   align-items: center;
 }
 
+@media (max-width: 768px) {
+  .container.row {
+    flex-direction: column-reverse;
+  }
+}
+
 .container.row .text-wrapper {
   flex: 1;
   display: flex;
@@ -85,10 +91,19 @@ body {
 .hero {
   background: rgb(74, 4, 78);
   background: radial-gradient(
-    circle,
+    circle at top left,
     rgba(74, 4, 78, 1) 0%,
-    rgba(23, 1, 24, 1) 50%
+    rgba(23, 1, 24, 1) 75%
   );
+}
+
+.cyberPop-img {
+  transition: 300ms;
+  opacity: 100%;
+}
+
+.cyberPop-img:hover {
+  opacity: 0;
 }
 
 .projects {
@@ -103,6 +118,11 @@ header {
   position: fixed;
   width: 100%;
   z-index: 99;
+  background-color: transparent;
+  transition: background-color 0.3s ease-in-out;
+}
+
+header.scrolled {
   background-color: var(--fuchsia1050);
 }
 
@@ -896,6 +916,40 @@ p {
 
 .project-logo.youversion {
   width: 3rem;
+}
+
+.img-wrapper {
+  position: relative;
+}
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(auto, 1fr);
+  gap: 0.5rem;
+  max-width: 66%;
+}
+
+@media (max-width: 1000px) {
+  .list {
+    display: flex;
+    flex-direction: column;
+    max-width: none;
+  }
+}
+
+.list li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--fuchsia500);
+  font-size: 0.85rem;
+}
+
+.list li svg {
+  width: 0.75rem;
+  height: 0.75rem;
+  color: var(--fuchsia500);
 }
 
 /* PREFLIGHT */
