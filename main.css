@@ -168,9 +168,9 @@ footer {
 .hero {
   background: rgb(74, 4, 78);
   background: radial-gradient(
-    circle at top left,
+    circle at bottom center,
     rgba(74, 4, 78, 1) 0%,
-    rgba(23, 1, 24, 1) 75%
+    rgba(23, 1, 24, 1) 70%
   );
 }
 
@@ -246,7 +246,8 @@ header.scrolled {
   top: 1.5rem;
   right: 2rem;
   display: block;
-  width: 2.5rem;
+  width: 2rem;
+  height: 2rem;
   cursor: pointer;
   background: none;
   z-index: 99;
@@ -257,7 +258,7 @@ header.scrolled {
 .menu-btn::before {
   content: "";
   display: block;
-  width: 100%;
+  width: 2rem;
   margin: 8px 0;
   height: 2px;
   background-color: var(--color);
