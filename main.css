@@ -628,7 +628,6 @@ p {
 
 @media (max-width: 640px) {
   .icon-overline.green {
-    color: #84cc16;
     height: 2rem;
     width: 2rem;
     margin: 0 0 1rem;
@@ -818,8 +817,8 @@ p {
     flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
-    gap: 4rem;
-    padding: 3rem 2rem;
+    gap: 2rem;
+    padding: 1.5rem;
   }
 }
 
@@ -974,6 +973,12 @@ p {
   box-sizing: border-box;
 }
 
+@media (max-width: 640px) {
+  .project-left {
+    padding-bottom: 1rem;
+  }
+}
+
 .project-left.small {
   padding: 0 1.5rem 1.5rem;
   gap: 1rem;
@@ -988,7 +993,7 @@ p {
 
 @media (max-width: 640px) {
   .project-left.small {
-    padding: 2rem;
+    padding: 1.5rem 1.5rem 2rem 1.5rem;
   }
 }
 
@@ -1054,7 +1059,7 @@ p {
   .project-img.small {
     height: auto;
     width: 100%;
-    border-radius: 0.5rem 0 0.5rem;
+    border-radius: 0.5rem 0.5rem 0 0;
     box-shadow: none;
   }
 }
