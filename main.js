@@ -61,4 +61,5 @@ yvLink.addEventListener("mouseleave", function () {
   affirm.classList.remove("-z-10");
   imgAffirm.classList.remove("opacity-100");
   imgAffirm.classList.remove("translate-x-0");
+  imgAffirm.src = "./assets/affirm-cover.png";
 });
