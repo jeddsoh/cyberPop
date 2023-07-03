@@ -50,6 +50,7 @@ affirmLink.addEventListener("mouseenter", function() {
 affirmLink.addEventListener("mouseleave", function() {
   yv.classList.remove("opacity-10");
   yv.classList.remove("-z-10");
+  imgAffirm.src = "./assets/yv-cover.png";
 fadeIn();
 });
 
@@ -63,6 +64,8 @@ yvLink.addEventListener("mouseenter", function() {
 yvLink.addEventListener("mouseleave", function() {
   affirm.classList.remove("opacity-10");
   affirm.classList.remove("-z-10");
+  imgAffirm.src = "./assets/affirm-cover.png"
+
   fadeIn();
 });
 
