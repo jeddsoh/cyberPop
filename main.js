@@ -42,30 +42,30 @@ function fadeIn() {
 
 affirmLink.addEventListener("mouseenter", function() {
   imgAffirm.src = "./assets/affirm-cover.png"
-  yv.classList.add("opacity-10");
-  yv.classList.add("-z-10");
-  fadeOut();
+  imgAffirm.onload = function() {
+    yv.classList.add("opacity-10");
+    yv.classList.add("-z-10");
+    fadeOut();}
 });
 
 affirmLink.addEventListener("mouseleave", function() {
   yv.classList.remove("opacity-10");
   yv.classList.remove("-z-10");
-  imgAffirm.src = "./assets/yv-cover.png";
 fadeIn();
 });
 
 yvLink.addEventListener("mouseenter", function() {
   imgAffirm.src = "./assets/yv-cover.png";
-  affirm.classList.add("opacity-10");
-  affirm.classList.add("-z-10");
-  fadeOut();
+  imgAffirm.onload = function() {
+    affirm.classList.add("opacity-10");
+    affirm.classList.add("-z-10");
+    fadeOut();
+  };
 });
 
 yvLink.addEventListener("mouseleave", function() {
   affirm.classList.remove("opacity-10");
   affirm.classList.remove("-z-10");
-  imgAffirm.src = "./assets/affirm-cover.png"
-
   fadeIn();
 });
 
