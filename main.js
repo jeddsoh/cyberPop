@@ -48,7 +48,7 @@ function imgIn() {
 
 affirmLink.addEventListener("mouseenter", function() {
   imgAffirm.src = "./assets/affirm-cover.png";
-  yv.classList.add("opacity-10");
+  yv.classList.add("opacity-0");
   yv.classList.add("-z-10");
   fadeOut();
   imgAffirm.onload = function() {
@@ -57,7 +57,7 @@ affirmLink.addEventListener("mouseenter", function() {
 });
 
 affirmLink.addEventListener("mouseleave", function() {
-  yv.classList.remove("opacity-10");
+  yv.classList.remove("opacity-0");
   yv.classList.remove("-z-10");
 fadeIn();
 imgIn();
@@ -65,7 +65,7 @@ imgIn();
 
 yvLink.addEventListener("mouseenter", function() {
   imgAffirm.src = "./assets/yv-cover.png";
-  affirm.classList.add("opacity-10");
+  affirm.classList.add("opacity-0");
   affirm.classList.add("-z-10");
   fadeOut();
   imgAffirm.onload = function() {
@@ -74,7 +74,7 @@ yvLink.addEventListener("mouseenter", function() {
 });
 
 yvLink.addEventListener("mouseleave", function() {
-  affirm.classList.remove("opacity-10");
+  affirm.classList.remove("opacity-0");
   affirm.classList.remove("-z-10");
   fadeIn();
   imgIn();
