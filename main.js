@@ -41,11 +41,12 @@ function fadeIn() {
 }
 
 affirmLink.addEventListener("mouseenter", function() {
-  imgAffirm.src = "./assets/affirm-cover.png"
+  imgAffirm.src = "./assets/affirm-cover.png";
   imgAffirm.onload = function() {
     yv.classList.add("opacity-10");
     yv.classList.add("-z-10");
-    fadeOut();}
+    fadeOut();
+  };
 });
 
 affirmLink.addEventListener("mouseleave", function() {
