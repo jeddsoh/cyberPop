@@ -1,31 +1,64 @@
-const menuBtn = document.querySelector(".menu-btn");
-const mobileMenu = document.querySelector(".mobile-nav");
-const mobileLinkProjects = document.getElementById("mobile-projects")
-const mobileLinkAbout = document.getElementById("mobile-about")
-const mobileLinkContact = document.getElementById("mobile-contact")
 
-menuBtn.addEventListener("click", function () {
-  menuBtn.classList.toggle("is-active");
-  mobileMenu.classList.toggle("is-active");
+// NEW
+const affirmLink = document.getElementById("affirm-link");
+const yvLink = document.getElementById("yv-link");
+
+const brand = document.getElementById("brand");
+const heading = document.getElementById("heading");
+const intro =  document.getElementById("intro");
+const btnGroup = document.getElementById("btn-group");
+const sketchNote = document.getElementById("sketch-note");
+
+const affirm = document.getElementById("affirm");
+const imgAffirm = document.getElementById("img-affirm");
+const imgAffirmParent = document.getElementById("img-affirm-parent");
+
+affirmLink.addEventListener("mouseenter", function () {
+  imgAffirm.src = "./assets/affirm-cover.png";
+  brand.classList.add("opacity-10");
+  heading.classList.add("opacity-10");
+  intro.classList.add("opacity-10");
+  btnGroup.classList.add("opacity-10");
+  sketchNote.classList.add("opacity-10");
+  yvLink.classList.add("opacity-10");
+  imgAffirm.classList.add("opacity-100");
+  imgAffirm.classList.add("translate-x-0");
 });
 
-mobileLinkProjects.addEventListener("click", function () {
-  menuBtn.classList.toggle("is-active");
-  mobileMenu.classList.toggle("is-active");
+affirmLink.addEventListener("mouseleave", function () {
+  brand.classList.remove("opacity-10");
+  heading.classList.remove("opacity-10");
+  intro.classList.remove("opacity-10");
+  btnGroup.classList.remove("opacity-10");
+  sketchNote.classList.remove("opacity-10");
+  yvLink.classList.remove("opacity-10");
+  imgAffirm.classList.remove("opacity-100");
+  imgAffirm.classList.remove("translate-x-0");
 });
 
-mobileLinkAbout.addEventListener("click", function () {
-  menuBtn.classList.toggle("is-active");
-  mobileMenu.classList.toggle("is-active");
+yvLink.addEventListener("mouseenter", function () {
+  imgAffirm.src = "./assets/yv-cover.png";
+  yvLink.classList.add("z-20")
+  brand.classList.add("opacity-10");
+  heading.classList.add("opacity-10");
+  intro.classList.add("opacity-10");
+  btnGroup.classList.add("opacity-10");
+  sketchNote.classList.add("opacity-10");
+  affirmLink.classList.add("opacity-10");
+  affirm.classList.add("-z-10");
+  imgAffirm.classList.add("opacity-100");
+  imgAffirm.classList.add("translate-x-0");
 });
 
-mobileLinkContact.addEventListener("click", function () {
-  menuBtn.classList.toggle("is-active");
-  mobileMenu.classList.toggle("is-active");
-});
-
-window.addEventListener('scroll', function() {
-  const header = document.querySelector('header');
-  const scrolled = window.scrollY > 0;
-  header.classList.toggle('scrolled', scrolled);
+yvLink.addEventListener("mouseleave", function () {
+  brand.classList.remove("opacity-10");
+  yvLink.classList.remove("z-20")
+  heading.classList.remove("opacity-10");
+  intro.classList.remove("opacity-10");
+  btnGroup.classList.remove("opacity-10");
+  sketchNote.classList.remove("opacity-10");
+  affirmLink.classList.remove("opacity-10");
+  affirm.classList.remove("-z-10");
+  imgAffirm.classList.remove("opacity-100");
+  imgAffirm.classList.remove("translate-x-0");
 });

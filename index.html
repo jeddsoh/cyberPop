@@ -7,419 +7,163 @@
     <link rel="stylesheet" href="./main.css" />
     <script src="./main.js" defer></script>
     <link rel="icon" type="image/x-icon" href="./assets/brand/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
     <title>cyberPop | Digital Alchemy</title>
   </head>
-  <body>
-    <header>
-      <nav class="navbar">
-        <a href="./index.html" class="brand">
-          <img src="./assets/brand/favicon.svg" alt="cyberPop logo" />
-          <p>cyber<span class="text-fuchsia500">Pop</span></p>
-        </a>
-        <div class="menu">
-          <a href="" class="nav-link"
-            ><svg
-              class="icon-sm icon-adjust-margin-bottom"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="w-6 h-6"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
-              />
-            </svg>
-            Home</a
+  <body class="bg-stone-950 text-stone-50 font-figtree overflow-hidden">
+    <header></header>
+    <main class="w-full lg:h-screen flex lg:justify-center lg:items-center p-4 overflow-visible">
+      <section class="container mx-auto max-w-screen-xl lg:grid grid-cols-2 gap-8 relative overflow-visible">
+        <div id="sketch-note" class="hidden lg:flex flex-col items-end gap-2 absolute top-[380px] left-[424px] text-stone-700 -z-10 transition-opacity duration-300">
+          <p class="text-lg font-marker -mr-20">Projects</p>
+          <svg
+            width="216"
+            height="120"
+            viewBox="0 0 216 120"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
           >
-          <a href="#projects" class="nav-link"
-            ><svg class="icon-sm" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 014.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0112 15a9.065 9.065 0 00-6.23-.693L5 14.5m14.8.8l1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0112 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5" />
-            </svg>
-            
-            Projects</a
-          >
-          <a href="#about" class="nav-link"
-            ><svg
-              class="icon-sm"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
+            <path
+              d="M207.77 3.30824C206.409 15.0402 202.989 48.5357 181.627 51.1471C172.738 52.2337 159.95 49.5369 153.706 43.861C140.297 31.6721 154.939 8.40889 171.45 25.3714C180.709 34.8843 175.077 50.0262 170.914 60.7069C164.776 76.451 150.94 84.8446 134.315 92.537C125.872 96.4436 82.3151 107.183 83.4393 104.906"
               stroke="currentColor"
-              class="w-6 h-6"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z"
-              />
-            </svg>
-            About</a
-          >
-          <a href="#contact" class="nav-link"
-            ><svg
-              class="icon-sm"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
+              stroke-width="5"
+              stroke-linecap="round"
+            />
+            <path
+              d="M25.7978 114.064C30.8754 111.438 72.1579 91.4334 65.947 93.8149C57.8177 96.932 50.5546 100.252 41.1275 103.224C29.9744 106.739 21.9117 110.616 9.56544 113.924C-1.26838 116.826 71.1757 114.757 84.1615 113.69"
               stroke="currentColor"
-              class="w-6 h-6"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 01-.825-.242m9.345-8.334a2.126 2.126 0 00-.476-.095 48.64 48.64 0 00-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0011.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155"
-              />
-            </svg>
-            Contact</a
-          >
-          <!-- <a href="" class="nav-link"
-            ><svg
-              class="icon-sm"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="w-6 h-6"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5"
-              />
-            </svg>
-            cyberAcademy</a
-          > -->
+              stroke-width="5"
+              stroke-linecap="round"
+            />
+          </svg>
         </div>
-        <a href="./assets/brand/JeddSohResume.pdf" target="_blank" class="button" id="nav-button" role="button"
-          >View My Resume</a
-        >
-      </nav>
-      <button class="menu-btn">
-        <div class="bar"></div>
-      </button>
-      <nav class="mobile-nav">
-        <a href="" class="mobile-nav-link"
-          ><svg
-            class="icon-sm icon-adjust-margin-bottom"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="w-6 h-6"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
-            />
-          </svg>
-          Home</a
-        >
-        <a href="#projects" class="mobile-nav-link" id="mobile-projects"
-          ><svg class="icon-sm" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 014.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0112 15a9.065 9.065 0 00-6.23-.693L5 14.5m14.8.8l1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0112 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5" />
-          </svg>
-          Projects</a
-        >
-        <a href="#about" class="mobile-nav-link" id="mobile-about"
-          ><svg
-            class="icon-sm"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="w-6 h-6"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z"
-            />
-          </svg>
-          About</a
-        >
-        <a href="#contact" class="mobile-nav-link" id="mobile-contact"
-          ><svg
-            class="icon-sm"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="w-6 h-6"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 01-.825-.242m9.345-8.334a2.126 2.126 0 00-.476-.095 48.64 48.64 0 00-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0011.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155"
-            />
-          </svg>
-          Contact</a
-        >
-        <!-- <a href="" class="mobile-nav-link"
-          ><svg
-            class="icon-sm"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="w-6 h-6"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5"
-            />
-          </svg>
-          cyberAcademy</a
-        > -->
-        <a href="./assets/brand/JeddSohResume.pdf" target="_blank" class="button" role="button">VIEW MY RESUME</a>
-      </nav>
-    </header>
-    <main>
-      <section class="hero" id="hero">
-        <div class="container content-button-wrapper max-width-768">
-          <div class="col-gap-1">
-            <div class="col-gap-0-5">
-              <!-- <svg class="icon-overline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
-                <path fill-rule="evenodd" d="M2.25 5.25a3 3 0 013-3h13.5a3 3 0 013 3V15a3 3 0 01-3 3h-3v.257c0 .597.237 1.17.659 1.591l.621.622a.75.75 0 01-.53 1.28h-9a.75.75 0 01-.53-1.28l.621-.622a2.25 2.25 0 00.659-1.59V18h-3a3 3 0 01-3-3V5.25zm1.5 0v7.5a1.5 1.5 0 001.5 1.5h13.5a1.5 1.5 0 001.5-1.5v-7.5a1.5 1.5 0 00-1.5-1.5H5.25a1.5 1.5 0 00-1.5 1.5z" clip-rule="evenodd" />
-              </svg> -->
-              <p class="text-overline">DESIGN + DEVELOPMENT</p>
-              <h1>
-                You've found the
-                <span class="text-fuchsia500">wicked wizard</span> of the web!
-              </h1>
-            </div>
-            <p>
-              Welcome to my virtual lair, where code meets creativity. I'm Jedd,
-              the <span class="">digital alchemist</span> known as
-              cyberPop, here to conjure pixel-perfect spells that will leave you enchanted.
+        <div id="content" class="self-center">
+          <div id="brand" class="transition-opacity duration-300">
+            <p class="font-semibold text-2xl text-stone-500 tracking-tight ">
+              Cyber <span class="text-emerald-500">Potions</span>
             </p>
           </div>
-          <div class="button-group">
-            <a href="#projects" class="button-secondary">View My Work</a>
-            <a href="#contact" class="button">Get In Touch</a>
-          </div>
-        </div>
-      </section>
-      <section class="projects" id="projects">
-        <div class="container">
-          <div class="text-wrapper">
-            <div class="heading-wrapper">
-              <svg
-                class="icon-overline green"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-                class="w-6 h-6"
+          <div id="heading" class="mt-20 transition-opacity duration-300">
+            <h1 class="text-7xl font-bold tracking-tight">
+              I'm Jedd. <br /><span class="text-stone-500"
+                >I design interfaces.</span
               >
-                <path
-                  fill-rule="evenodd"
-                  d="M10.5 3.798v5.02a3 3 0 01-.879 2.121l-2.377 2.377a9.845 9.845 0 015.091 1.013 8.315 8.315 0 005.713.636l.285-.071-3.954-3.955a3 3 0 01-.879-2.121v-5.02a23.614 23.614 0 00-3 0zm4.5.138a.75.75 0 00.093-1.495A24.837 24.837 0 0012 2.25a25.048 25.048 0 00-3.093.191A.75.75 0 009 3.936v4.882a1.5 1.5 0 01-.44 1.06l-6.293 6.294c-1.62 1.621-.903 4.475 1.471 4.88 2.686.46 5.447.698 8.262.698 2.816 0 5.576-.239 8.262-.697 2.373-.406 3.092-3.26 1.47-4.881L15.44 9.879A1.5 1.5 0 0115 8.818V3.936z"
-                  clip-rule="evenodd"
-                />
-              </svg>
-              <h2>Recent Projects</h2>
-            </div>
-            <p>
-              I turn pixels into potions, creating web
-              experiences that are so addictive, your users might need a support
-              group.
+            </h1>
+          </div>
+          <div id="intro" class="mt-6 transition-opacity duration-300">
+            <p class="text-xl text-stone-400">
+              I’m the digital alchemist behind Cyber Potions, here to craft
+              pixel-perfect concoctions that will leave your users enchanted.
             </p>
           </div>
-          <div class="projects-wrapper">
-            <div class="project-card affirm">
-              <div class="project-left">
-                <img class="project-logo affirm" src="./assets/projects/affirm/logo.png" alt="">
-                <h3 class="project-title">
-                  Designing internal software for financial technology
-                </h3>
-                <p class="project-description">
-                  I designed internal software for <a class="project-company affirm" href="https://www.affirm.com/" target="_blank">Affirm</a> to overhaul account management for support agents, resulting in increased efficiency, fewer data discrepancies, and decreased customer frustration.
-                </p>
-                <a href="./projects/affirm.html" class="project-button affirm">View Project</a>
-              </div>
-              <div class="project-right">
-                <img class="project-img" src="./assets/projects/affirm/thumbnail.png" alt="A screen from a project with Affirm">
-              </div>
-            </div>
-            <div class="project-card youversion">
-              <div class="project-left">
-                <img class="project-logo youversion" src="./assets/projects/youversion/logo.png" alt="">
-                <h3 class="project-title">
-                  Designing mobile features for the Bible App
-                </h3>
-                <p class="project-description">
-                  I designed updated prayer features for <a class="project-company youversion" href="https://www.youversion.church/" target="_blank">YouVersion</a>, AKA The Bible App, to help users access their prayers faster and better manage them.
-                </p>
-                <a href="./projects/youversion.html" class="project-button youversion">View Project</a>
-              </div>
-              <div class="project-right">
-                <img class="project-img youversion" src="./assets/projects/youversion/thumbnail.png" alt="A screen from a project with Affirm">
-              </div>
-            </div>
-            <!-- <div class="project-card cyberWorld">
-              <div class="project-left">
-                <img class="project-logo youversion" src="./assets/brand/favicon.svg" alt="">
-                <h3 class="project-title">
-                  cyberWorld Theme for VSCode
-                </h3>
-                <p class="project-description">
-                  An neon/synthwave theme for VS Code for bringing aesthetic magic to software development. Available on Visual Studio Marketplace.
-                </p>
-                <a href="./projects/affirm.html" class="button">View Project</a>
-              </div>
-              <div class="project-right">
-                <img class="project-img" src="./assets/projects/cyberWorld/thumbnail.png" alt="A screen from a project with Affirm">
-              </div>
-            </div> -->
-          </div>
-          <div class="projects-wrapper small">
-            <div class="project-card small">
-              <div class="project-left small">
-                <div>
-                <p class="text-award">Gold Medal – 2023 OKC ADDY Awards</p>
-                <h3 class="project-title small">
-                  Warriors for Freedom
-                </h3>
-              </div>
-                <p class="project-description-small">
-                  I built a website for a non-profit fighting to end veteran suicide.
-                </p>
-                <a href="https://www.warriorsforfreedom.org/" target="_blank" class="project-button small">View Live Site</a>
-              </div>
-              <div class="project-right small">
-                <img class="project-img small" src="./assets/projects/warriors/thumbnail.png" alt="A screen from a project with Affirm">
-              </div>
-            </div>
-            <div class="project-card small">
-              <div class="project-left small">
-                <div>
-                  <p class="text-award  color-inherit">Web Development</p>
-                <h3 class="project-title small">
-                  WSA
-                </h3>
-              </div>
-                <p class="project-description-small">
-                  I built a website for WSA, a phone repair company in Oklahoma City.
-                </p>
-                <a href="https://www.yourwsa.com/" target="_blank" class="project-button small">View Live Site</a>
-              </div>
-              <div class="project-right small">
-                <img class="project-img small" src="./assets/projects/wsa/thumbnail.png" alt="A screen from a project with Affirm">
-              </div>
-            </div>
-            <div class="project-card small">
-              <div class="project-left small">
-                <div>
-                  <p class="text-award  color-inherit">Web Development</p>
-                <h3 class="project-title small">
-                  Frank Agency
-                </h3>
-              </div>
-                <p class="project-description-small">
-                  I built a website for Oklahoma City's top advertising agency
-                </p>
-                <a href="https://www.frankyou.com/" target="_blank" class="project-button small">View Live Site</a>
-              </div>
-              <div class="project-right small">
-                <img class="project-img small" src="./assets/projects/frank/thumbnail.png" alt="A screen from a project with Affirm">
-              </div>
-            </div>
-        </div> 
-      </section>
-      <section class="about" id="about">
-        <div class="container row">
-          <div class="text-wrapper about">
-            
-            <h2>Welcome, Weary Web Wanderer!</h2>
-            <p>I'm Jedd, a UI engineer who dances between the realms of visual design and front-end code.
-            </p>
-            <p>With expertise in UX and UI design, I create interfaces that entice users to explore and engage. Leveraging front-end development, I breathe life into designs, crafting fully functional digital experiences.
-            </p>
-            <p>Blending the realms of design and development enables me to envision a user's journey from the first pixel to the final interaction. While my design skills bring aesthetics and usability, my coding ability ensures that the magic remains intact.</p>
-            <p>Here are some abilities I've unlocked:</p>
-            <ul class="list">
-              <li><svg class="icon-bullet" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-              </svg>
-              Figma</li>
-              <li><svg class="icon-bullet" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-              </svg>JavaScript</li>
-              <li><svg class="icon-bullet" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-              </svg>Design Systems</li>
-              <li><svg class="icon-bullet" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-              </svg>React</li>
-              <li><svg class="icon-bullet" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-              </svg>Webflow</li>
-              <li><svg class="icon-bullet" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-              </svg>TailwindCSS</li>
+          <div class="mt-20 w-full">
+            <ul class="flex flex-col gap-6">
+              <li id="affirm" class="relative group">
+                <a
+                  href="./projects/affirm.html"
+                  id="affirm-link"
+                  class="flex gap-4 items-center hover:text-indigo-400 transition-colors duration-150"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6 text-stone-500"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 014.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0112 15a9.065 9.065 0 00-6.23-.693L5 14.5m14.8.8l1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0112 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5"
+                    />
+                  </svg>
+                  <p class="text-xl font-semibold">
+                    Designing internal software for Affirm
+                  </p>
+                </a>
+                <div id="affirm-info" class="opacity-0 group-hover:opacity-100 absolute flex flex-col gap-14 items-start -top-12 left-[40px] -z-10 transition duration-150">
+                 
+                    
+                    <svg class="absolute left-[356px] -top-[52px]" width="304" height="118" viewBox="0 0 304 118" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M146 1.0002L146 0.5002L145.5 0.5002L145.5 1.0002L146 1.0002ZM0.413974 115.654C0.774894 117.082 2.22498 117.947 3.65283 117.586C5.08068 117.225 5.9456 115.775 5.58468 114.347C5.22376 112.919 3.77367 112.054 2.34582 112.415C0.917972 112.776 0.0530541 114.226 0.413974 115.654ZM146 115L146 115.5L146.5 115.5L146.5 115L146 115ZM146 1.5002L303.5 1.5002L303.5 0.500201L146 0.5002L146 1.5002ZM2.99933 115.5L146 115.5L146 114.5L2.99933 114.5L2.99933 115.5ZM146.5 115L146.5 1.0002L145.5 1.0002L145.5 115L146.5 115Z" fill="url(#paint0_linear_48_1180)"/>
+                      <defs>
+                      <linearGradient id="paint0_linear_48_1180" x1="1.5" y1="117.5" x2="299" y2="112.5" gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#9292FE"/>
+                      <stop offset="1" stop-color="#9292FE" stop-opacity="0"/>
+                      </linearGradient>
+                      </defs>
+                      </svg>
+                      
+                      
+                    
+                    
+                  <img src="./assets/affirm-logo.svg" alt="Affirm Logo" class="h-8">
+                  <p>I designed internal software for Affirm to overhaul account management for support agents, resulting in increased efficiency, fewer data discrepancies, and decreased customer frustration.</p>
+                </div>
+              </li>
+              <li id="yv" class="relative group">
+                <a
+                  href="./projects/youversion.html"
+                  id="yv-link"
+                  class="flex gap-4 items-center hover:text-red-400 transition-colors duration-150 z-20"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6 text-stone-500"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 014.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0112 15a9.065 9.065 0 00-6.23-.693L5 14.5m14.8.8l1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0112 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5"
+                    />
+                  </svg>
+                  <p class="text-xl font-semibold">
+                    Designing mobile features for the Bible App
+                  </p>
+                </a>
+                <div id="yv-info" class="opacity-0 group-hover:opacity-100 absolute flex flex-col gap-14 items-start -top-16 left-[40px] -z-10 transition duration-150">
+                 
+                    
+                    <svg class="absolute left-[408px] -top-[36px]" width="248" height="118" viewBox="0 0 248 118" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M89.9998 1.00041L89.9998 0.500406L89.4998 0.500406L89.4998 1.00041L89.9998 1.00041ZM0.914647 115.654C1.27557 117.082 2.72565 117.947 4.1535 117.586C5.58135 117.225 6.44627 115.775 6.08535 114.347C5.72443 112.919 4.27435 112.054 2.8465 112.415C1.41865 112.776 0.553727 114.226 0.914647 115.654ZM89.9998 115.001L89.9998 115.501L90.4998 115.501L90.4998 115.001L89.9998 115.001ZM89.9998 1.50041L247.5 1.50043L247.5 0.500431L89.9998 0.500406L89.9998 1.50041ZM3.5 115.5L89.9998 115.501L89.9998 114.501L3.5 114.5L3.5 115.5ZM90.4998 115.001L90.4998 1.00041L89.4998 1.00041L89.4998 115.001L90.4998 115.001Z" fill="url(#paint0_linear_68_104)"/>
+                      <defs>
+                      <linearGradient id="paint0_linear_68_104" x1="-54.5" y1="117.5" x2="243" y2="112.5" gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#F87171"/>
+                      <stop offset="1" stop-color="#F87171" stop-opacity="0"/>
+                      </linearGradient>
+                      </defs>
+                      </svg>
+                      
+                      
+                      
+                    
+                    
+                  <img src="./assets/projects/youversion/logo.png" alt="Affirm Logo" class="h-12">
+                  <p>I designed updated prayer features for YouVersion, AKA The Bible App, to help users access their prayers faster and better manage them.
+                  </p>
+                </div>
+              </li>
             </ul>
           </div>
-          <div class="img-wrapper">
-            <img class="cyberPop-img" src="./assets/brand/headshot-art.png" alt="Digital art of Jedd">
-            <img class="cyberPop-img-sketch" src="./assets/brand/headshot-art-sketch.png" alt="Sketch art of Jedd">
+          <div id="btn-group" class="mt-20 transition-opacity duration-300">
+            <a href="" class="text-xl font-semibold text-emerald-500"
+              >View Resume</a
+            >
           </div>
         </div>
-      </section>
-      <section class="contact" id="contact">
-        <div class="container column">
-          <div class="text-wrapper">
-            <h2>Summon Me</h2>
-            <p>Send forth your messages through these enchanted portals. With a wave of my cursor, I shall conjure timely responses.</p>
-          </div>
-          <div class="contacts">
-            <a class="contact-wrapper" href="mailto:jedd@cyberpop.io">
-              <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
-              </svg>
-              
-              <p class="contact-link">jedd@cyberpop.io</p>
-            </a>
-            <a class="contact-wrapper" href="https://www.linkedin.com/in/jeddsoh/" target="_blank">
-              <svg class="contact-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M6.6439 9.59599C8.25509 9.59599 9.56123 8.28985 9.56123 6.67866C9.56123 5.06746 8.25509 3.76132 6.6439 3.76132C5.0327 3.76132 3.72656 5.06746 3.72656 6.67866C3.72656 8.28985 5.0327 9.59599 6.6439 9.59599Z" fill="currentColor"/>
-                <path d="M12.3158 11.8067V27.992H17.3411V19.988C17.3411 17.876 17.7385 15.8307 20.3571 15.8307C22.9398 15.8307 22.9718 18.2453 22.9718 20.1213V27.9933H27.9998V19.1173C27.9998 14.7573 27.0611 11.4067 21.9651 11.4067C19.5185 11.4067 17.8785 12.7493 17.2078 14.02H17.1398V11.8067H12.3158ZM4.12646 11.8067H9.1598V27.992H4.12646V11.8067Z" fill="currentColor"/>
-                </svg>
-                
-              <p class="contact-link">linkedin.com/in/jeddsoh/</p>
-              </a>
-              <a class="contact-wrapper" href="https://github.com/jeddsoh" target="_blank">
-                <svg class="contact-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0258 2C6.51676 2 2.05176 6.465 2.05176 11.974C2.05176 16.38 4.90876 20.119 8.87276 21.439C9.37176 21.529 9.55176 21.222 9.55176 20.958C9.55176 20.721 9.54376 20.093 9.54076 19.262C6.76576 19.864 6.17976 17.924 6.17976 17.924C5.72776 16.772 5.07276 16.465 5.07276 16.465C4.16776 15.846 5.14176 15.86 5.14176 15.86C6.14376 15.93 6.66876 16.888 6.66876 16.888C7.55876 18.412 9.00476 17.972 9.57076 17.717C9.66176 17.072 9.92176 16.632 10.2058 16.383C7.99176 16.132 5.66376 15.276 5.66376 11.453C5.66376 10.366 6.05276 9.474 6.68776 8.778C6.58676 8.525 6.24176 7.51 6.78676 6.138C6.78676 6.138 7.62376 5.869 9.52876 7.159C10.3424 6.93767 11.1816 6.8247 12.0248 6.823C12.8679 6.82437 13.7072 6.93735 14.5208 7.159C16.4268 5.868 17.2628 6.138 17.2628 6.138C17.8078 7.51 17.4658 8.525 17.3618 8.778C18.0018 9.474 18.3858 10.365 18.3858 11.453C18.3858 15.286 16.0558 16.128 13.8338 16.375C14.1888 16.683 14.5088 17.291 14.5088 18.221C14.5088 19.555 14.4968 20.631 14.4968 20.958C14.4968 21.225 14.6748 21.535 15.1838 21.437C19.1458 20.115 21.9998 16.379 21.9998 11.974C21.9998 6.465 17.5348 2 12.0258 2Z" fill="currentColor"/>
-                  </svg>
-                <p class="contact-link">github.com/jeddsoh</p>
-                </a>
-            <a class="contact-wrapper" href="https://www.instagram.com/jeddsoh/" target="_blank">
-              <svg class="contact-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M15.9988 9.836C14.3637 9.836 12.7955 10.4856 11.6393 11.6418C10.4831 12.798 9.8335 14.3662 9.8335 16.0013C9.8335 17.6365 10.4831 19.2047 11.6393 20.3609C12.7955 21.5171 14.3637 22.1667 15.9988 22.1667C17.634 22.1667 19.2022 21.5171 20.3584 20.3609C21.5146 19.2047 22.1642 17.6365 22.1642 16.0013C22.1642 14.3662 21.5146 12.798 20.3584 11.6418C19.2022 10.4856 17.634 9.836 15.9988 9.836ZM15.9988 20.0053C14.9365 20.0053 13.9178 19.5833 13.1666 18.8322C12.4155 18.0811 11.9935 17.0623 11.9935 16C11.9935 14.9377 12.4155 13.9189 13.1666 13.1678C13.9178 12.4167 14.9365 11.9947 15.9988 11.9947C17.0611 11.9947 18.0799 12.4167 18.831 13.1678C19.5822 13.9189 20.0042 14.9377 20.0042 16C20.0042 17.0623 19.5822 18.0811 18.831 18.8322C18.0799 19.5833 17.0611 20.0053 15.9988 20.0053Z" fill="currentColor"/>
-                <path d="M22.408 11.0467C23.2019 11.0467 23.8454 10.4031 23.8454 9.60933C23.8454 8.81551 23.2019 8.172 22.408 8.172C21.6142 8.172 20.9707 8.81551 20.9707 9.60933C20.9707 10.4031 21.6142 11.0467 22.408 11.0467Z" fill="currentColor"/>
-                <path d="M27.3771 8.14799C27.0684 7.35089 26.5967 6.62703 25.9922 6.02273C25.3877 5.41843 24.6637 4.94701 23.8664 4.63865C22.9336 4.28846 21.948 4.09911 20.9518 4.07865C19.6678 4.02265 19.2611 4.00665 16.0051 4.00665C12.7491 4.00665 12.3318 4.00665 11.0584 4.07865C10.063 4.09806 9.07812 4.28745 8.14644 4.63865C7.34902 4.94665 6.62479 5.41795 6.02022 6.02229C5.41565 6.62663 4.94408 7.35068 4.63577 8.14799C4.28551 9.0808 4.09659 10.0664 4.07711 11.0627C4.01977 12.3453 4.00244 12.752 4.00244 16.0093C4.00244 19.2653 4.00244 19.68 4.07711 20.956C4.09711 21.9533 4.28511 22.9373 4.63577 23.872C4.94494 24.669 5.41697 25.3928 6.02169 25.997C6.62641 26.6013 7.35053 27.0728 8.14777 27.3813C9.07769 27.7456 10.0629 27.9485 11.0611 27.9813C12.3451 28.0373 12.7518 28.0547 16.0078 28.0547C19.2638 28.0547 19.6811 28.0547 20.9544 27.9813C21.9506 27.9611 22.9361 27.7722 23.8691 27.4227C24.6661 27.1136 25.3899 26.6417 25.9944 26.0373C26.5989 25.4328 27.0707 24.709 27.3798 23.912C27.7304 22.9787 27.9184 21.9947 27.9384 20.9973C27.9958 19.7147 28.0131 19.308 28.0131 16.0507C28.0131 12.7933 28.0131 12.38 27.9384 11.104C27.9229 10.0937 27.733 9.09365 27.3771 8.14799ZM25.7531 20.8573C25.7445 21.6257 25.6043 22.387 25.3384 23.108C25.1382 23.6265 24.8317 24.0973 24.4385 24.4902C24.0454 24.8831 23.5744 25.1894 23.0558 25.3893C22.3427 25.6539 21.5896 25.7942 20.8291 25.804C19.5624 25.8627 19.2051 25.8773 15.9571 25.8773C12.7064 25.8773 12.3744 25.8773 11.0838 25.804C10.3237 25.7947 9.57088 25.6544 8.85844 25.3893C8.33802 25.1906 7.86511 24.8849 7.47029 24.4919C7.07548 24.099 6.76756 23.6275 6.56644 23.108C6.30437 22.3947 6.16419 21.6424 6.15177 20.8827C6.09444 19.616 6.08111 19.2587 6.08111 16.0107C6.08111 12.7613 6.08111 12.4293 6.15177 11.1373C6.16039 10.3693 6.30065 9.60855 6.56644 8.88799C6.97311 7.83599 7.80644 7.00799 8.85844 6.60532C9.57123 6.34151 10.3238 6.20127 11.0838 6.19065C12.3518 6.13332 12.7078 6.11732 15.9571 6.11732C19.2064 6.11732 19.5398 6.11732 20.8291 6.19065C21.5897 6.1998 22.3429 6.34008 23.0558 6.60532C23.5743 6.80568 24.0453 7.11226 24.4384 7.50536C24.8315 7.89846 25.1381 8.36941 25.3384 8.88799C25.6005 9.60125 25.7407 10.3535 25.7531 11.1133C25.8104 12.3813 25.8251 12.7373 25.8251 15.9867C25.8251 19.2347 25.8251 19.584 25.7678 20.8587H25.7531V20.8573Z" fill="currentColor"/>
-                </svg>
-                
-              <p class="contact-link">@jeddsoh</p>
-              </a>
-          </div>
-        </div>
+        <div id="img-affirm-parent" class="w-full h-full relative">
+            <img id="img-affirm" src="./assets/affirm-cover.png" alt="" class="object-left object-cover h-[800px] transition-all duration-150 opacity-0 translate-x-72 overflow-visible">
+        </div>   
       </section>
     </main>
-    <footer>
-      <p>© 2023 Jedd Soh.</p>
-    </footer>
+    <footer>        <div class="opacity-10"></div>
+      <div class="hidden opacity-100 translate-x-0 z-20"></div></footer>
   </body>
 </html>
