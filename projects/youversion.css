@@ -83,6 +83,11 @@ body {
   position: relative;
 }
 
+.lettermark {
+  letter-spacing: -0.025em;
+}
+
+
 header {
   top: 0;
   left: 50%;

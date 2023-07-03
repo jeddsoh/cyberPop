@@ -105,6 +105,10 @@ header.scrolled {
   transform: translate(-50%, -50%);
 }
 
+.lettermark {
+  letter-spacing: -0.025em;
+}
+
 .nav-link {
   display: flex;
   color: var(--color950);
