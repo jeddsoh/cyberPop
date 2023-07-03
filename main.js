@@ -17,11 +17,11 @@ const yvBullet = document.getElementById("yv-bullet");
 
 
 function fadeOut() {
-  brand.classList.add("opacity-10");
-  heading.classList.add("opacity-10");
-  intro.classList.add("opacity-10");
-  btnGroup.classList.add("opacity-10");
-  sketchNote.classList.add("opacity-10");
+  brand.classList.add("opacity-5");
+  heading.classList.add("opacity-5");
+  intro.classList.add("opacity-5");
+  btnGroup.classList.add("opacity-0");
+  sketchNote.classList.add("opacity-0");
 }
 
 function imgOut() {
@@ -32,11 +32,11 @@ function imgOut() {
 }
 
 function fadeIn() {
-  brand.classList.remove("opacity-10");
-  heading.classList.remove("opacity-10");
-  intro.classList.remove("opacity-10");
-  btnGroup.classList.remove("opacity-10");
-  sketchNote.classList.remove("opacity-10");
+  brand.classList.remove("opacity-5");
+  heading.classList.remove("opacity-5");
+  intro.classList.remove("opacity-5");
+  btnGroup.classList.remove("opacity-0");
+  sketchNote.classList.remove("opacity-0");
 }
 
 function imgIn() {
