@@ -47,11 +47,11 @@ function imgIn() {
 }
 
 affirmLink.addEventListener("mouseenter", function () {
-  img.src = "./assets/affirm-cover.png";
   yv.classList.add("opacity-0");
   yv.classList.add("-z-10");
   affirmBullet.classList.add("opacity-0");
   fadeOut();
+  img.src = "./assets/affirm-cover.png";
   img.onload = function () {
     imgOut();
   };
@@ -67,12 +67,12 @@ affirmLink.addEventListener("mouseleave", function () {
 });
 
 yvLink.addEventListener("mouseenter", function () {
-  img.src = "./assets/yv-cover.png";
   affirm.classList.add("opacity-0");
   affirm.classList.add("-z-10");
   yvBullet.classList.add("opacity-0");
 
   fadeOut();
+  img.src = "./assets/yv-cover.png";
   img.onload = function () {
     imgOut();
   };
