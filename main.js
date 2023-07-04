@@ -15,7 +15,6 @@ const img = document.getElementById("img-affirm");
 const affirmBullet = document.getElementById("affirm-bullet");
 const yvBullet = document.getElementById("yv-bullet");
 
-
 function fadeOut() {
   brand.classList.add("opacity-5");
   heading.classList.add("opacity-5");
