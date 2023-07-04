@@ -1,8 +1,12 @@
 const affirmLink = document.getElementById("affirm-link");
 const yvLink = document.getElementById("yv-link");
+const gbLink = document.getElementById("gb-link");
+
 
 const affirm = document.getElementById("affirm");
 const yv = document.getElementById("yv");
+const gb = document.getElementById("gb");
+
 
 const brand = document.getElementById("brand");
 const heading = document.getElementById("heading");
@@ -14,6 +18,8 @@ const img = document.getElementById("img-affirm");
 
 const affirmBullet = document.getElementById("affirm-bullet");
 const yvBullet = document.getElementById("yv-bullet");
+const gbBullet = document.getElementById("gb-bullet");
+
 
 function fadeOut() {
   brand.classList.add("opacity-5");
@@ -48,6 +54,8 @@ function imgIn() {
 affirmLink.addEventListener("mouseenter", function () {
   yv.classList.add("opacity-0");
   yv.classList.add("-z-10");
+  gb.classList.add("opacity-0");
+  gb.classList.add("-z-10");
   affirmBullet.classList.add("opacity-0");
   fadeOut();
   img.src = "./assets/affirm-cover.png";
@@ -59,6 +67,8 @@ affirmLink.addEventListener("mouseenter", function () {
 affirmLink.addEventListener("mouseleave", function () {
   yv.classList.remove("opacity-0");
   yv.classList.remove("-z-10");
+  gb.classList.remove("opacity-0");
+  gb.classList.remove("-z-10");
   affirmBullet.classList.remove("opacity-0");
 
   fadeIn();
@@ -68,6 +78,8 @@ affirmLink.addEventListener("mouseleave", function () {
 yvLink.addEventListener("mouseenter", function () {
   affirm.classList.add("opacity-0");
   affirm.classList.add("-z-10");
+  gb.classList.add("opacity-0");
+  gb.classList.add("-z-10");
   yvBullet.classList.add("opacity-0");
 
   fadeOut();
@@ -80,7 +92,35 @@ yvLink.addEventListener("mouseenter", function () {
 yvLink.addEventListener("mouseleave", function () {
   affirm.classList.remove("opacity-0");
   affirm.classList.remove("-z-10");
+  gb.classList.remove("opacity-0");
+  gb.classList.remove("-z-10");
   yvBullet.classList.remove("opacity-0");
   fadeIn();
   imgIn();
 });
+
+
+gbLink.addEventListener("mouseenter", function () {
+  affirm.classList.add("opacity-0");
+  affirm.classList.add("-z-10");
+  yv.classList.add("opacity-0");
+  yv.classList.add("-z-10");
+  gbBullet.classList.add("opacity-0");
+
+  fadeOut();
+  img.src = "./assets/gb-cover.png";
+  img.onload = function () {
+    imgOut();
+  };
+});
+
+gbLink.addEventListener("mouseleave", function () {
+  affirm.classList.remove("opacity-0");
+  affirm.classList.remove("-z-10");
+  yv.classList.remove("opacity-0");
+  yv.classList.remove("-z-10");
+  gbBullet.classList.remove("opacity-0");
+  fadeIn();
+  imgIn();
+});
+
